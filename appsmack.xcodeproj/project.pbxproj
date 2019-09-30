@@ -17,6 +17,8 @@
 		FEA7D9952341CA3B0007ADD8 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9942341CA3B0007ADD8 /* ChannelVC.swift */; };
 		FEA7D99A2341D66A0007ADD8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9982341D66A0007ADD8 /* SWRevealViewController.m */; };
 		FEA7D99C23423DEB0007ADD8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D99B23423DEB0007ADD8 /* GradientView.swift */; };
+		FEA7D99F234259DE0007ADD8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D99E234259DE0007ADD8 /* Constants.swift */; };
+		FEA7D9A1234261C70007ADD8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9A0234261C70007ADD8 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		FEA7D9982341D66A0007ADD8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FEA7D9992341D66A0007ADD8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FEA7D99B23423DEB0007ADD8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FEA7D99E234259DE0007ADD8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FEA7D9A0234261C70007ADD8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		FE420C5323419AAF000C693C /* appsmack */ = {
 			isa = PBXGroup;
 			children = (
+				FEA7D99D234259B70007ADD8 /* Utilities */,
 				FEA7D9962341D6460007ADD8 /* Supporting Files */,
 				FEA7D9912341CA010007ADD8 /* Model */,
 				FEA7D9902341C9FA0007ADD8 /* View */,
@@ -107,6 +112,7 @@
 			children = (
 				FEA7D9922341CA290007ADD8 /* ChatVC.swift */,
 				FEA7D9942341CA3B0007ADD8 /* ChannelVC.swift */,
+				FEA7D9A0234261C70007ADD8 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +140,14 @@
 				FEA7D9972341D6690007ADD8 /* appsmack-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEA7D99D234259B70007ADD8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FEA7D99E234259DE0007ADD8 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			files = (
 				FEA7D9932341CA290007ADD8 /* ChatVC.swift in Sources */,
 				FE420C5523419AAF000C693C /* AppDelegate.swift in Sources */,
+				FEA7D9A1234261C70007ADD8 /* LoginVC.swift in Sources */,
 				FEA7D99C23423DEB0007ADD8 /* GradientView.swift in Sources */,
 				FEA7D99A2341D66A0007ADD8 /* SWRevealViewController.m in Sources */,
+				FEA7D99F234259DE0007ADD8 /* Constants.swift in Sources */,
 				FE420C5723419AAF000C693C /* SceneDelegate.swift in Sources */,
 				FEA7D9952341CA3B0007ADD8 /* ChannelVC.swift in Sources */,
 			);
