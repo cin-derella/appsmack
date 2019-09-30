@@ -16,6 +16,7 @@
 		FEA7D9932341CA290007ADD8 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9922341CA290007ADD8 /* ChatVC.swift */; };
 		FEA7D9952341CA3B0007ADD8 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9942341CA3B0007ADD8 /* ChannelVC.swift */; };
 		FEA7D99A2341D66A0007ADD8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9982341D66A0007ADD8 /* SWRevealViewController.m */; };
+		FEA7D99C23423DEB0007ADD8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D99B23423DEB0007ADD8 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FEA7D9972341D6690007ADD8 /* appsmack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appsmack-Bridging-Header.h"; sourceTree = "<group>"; };
 		FEA7D9982341D66A0007ADD8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FEA7D9992341D66A0007ADD8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FEA7D99B23423DEB0007ADD8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		FEA7D9902341C9FA0007ADD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEA7D99B23423DEB0007ADD8 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				FEA7D9932341CA290007ADD8 /* ChatVC.swift in Sources */,
 				FE420C5523419AAF000C693C /* AppDelegate.swift in Sources */,
+				FEA7D99C23423DEB0007ADD8 /* GradientView.swift in Sources */,
 				FEA7D99A2341D66A0007ADD8 /* SWRevealViewController.m in Sources */,
 				FE420C5723419AAF000C693C /* SceneDelegate.swift in Sources */,
 				FEA7D9952341CA3B0007ADD8 /* ChannelVC.swift in Sources */,
