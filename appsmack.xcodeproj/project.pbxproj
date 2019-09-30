@@ -14,6 +14,7 @@
 		FE420C5C23419AAF000C693C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE420C5A23419AAF000C693C /* Main.storyboard */; };
 		FE420C5E23419AB0000C693C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE420C5D23419AB0000C693C /* Assets.xcassets */; };
 		FE420C6123419AB0000C693C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE420C5F23419AB0000C693C /* LaunchScreen.storyboard */; };
+		FEA7D98E2341C44E0007ADD8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D98C2341C44E0007ADD8 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		FE420C5D23419AB0000C693C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE420C6023419AB0000C693C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE420C6223419AB0000C693C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA7D98B2341C44E0007ADD8 /* appsmack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appsmack-Bridging-Header.h"; sourceTree = "<group>"; };
+		FEA7D98C2341C44E0007ADD8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FEA7D98D2341C44E0007ADD8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		FE420C4823419AAF000C693C = {
 			isa = PBXGroup;
 			children = (
+				FEA7D98A2341C3650007ADD8 /* Supporting FIles */,
 				FE420C5323419AAF000C693C /* appsmack */,
 				FE420C5223419AAF000C693C /* Products */,
 				7A859FD55398B5A49547C0AF /* Pods */,
@@ -89,6 +94,16 @@
 				FE420C6223419AB0000C693C /* Info.plist */,
 			);
 			path = appsmack;
+			sourceTree = "<group>";
+		};
+		FEA7D98A2341C3650007ADD8 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				FEA7D98D2341C44E0007ADD8 /* SWRevealViewController.h */,
+				FEA7D98C2341C44E0007ADD8 /* SWRevealViewController.m */,
+				FEA7D98B2341C44E0007ADD8 /* appsmack-Bridging-Header.h */,
+			);
+			path = "Supporting FIles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +140,7 @@
 				TargetAttributes = {
 					FE420C5023419AAF000C693C = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -212,6 +228,7 @@
 				FE420C5923419AAF000C693C /* ViewController.swift in Sources */,
 				FE420C5523419AAF000C693C /* AppDelegate.swift in Sources */,
 				FE420C5723419AAF000C693C /* SceneDelegate.swift in Sources */,
+				FEA7D98E2341C44E0007ADD8 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +373,7 @@
 			baseConfigurationReference = 54F1DAE6014A48CE8A7A10D2 /* Pods-appsmack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34YM3S85L;
 				INFOPLIST_FILE = appsmack/Info.plist;
@@ -366,7 +384,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cinderella.appsmack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting FIles/appsmack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -376,6 +396,7 @@
 			baseConfigurationReference = CAB365F3CAD7E1166C7C146C /* Pods-appsmack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34YM3S85L;
 				INFOPLIST_FILE = appsmack/Info.plist;
@@ -386,7 +407,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cinderella.appsmack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting FIles/appsmack-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
