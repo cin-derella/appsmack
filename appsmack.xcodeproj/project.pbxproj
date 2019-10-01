@@ -20,6 +20,7 @@
 		FEA7D99F234259DE0007ADD8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D99E234259DE0007ADD8 /* Constants.swift */; };
 		FEA7D9A1234261C70007ADD8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9A0234261C70007ADD8 /* LoginVC.swift */; };
 		FEA7D9A323432A6C0007ADD8 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9A223432A6C0007ADD8 /* CreateAccountVC.swift */; };
+		FEA7D9A62343B0980007ADD8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9A52343B0980007ADD8 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FEA7D99E234259DE0007ADD8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FEA7D9A0234261C70007ADD8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FEA7D9A223432A6C0007ADD8 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		FEA7D9A52343B0980007ADD8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		FE420C5323419AAF000C693C /* appsmack */ = {
 			isa = PBXGroup;
 			children = (
+				FEA7D9A42343B06E0007ADD8 /* Services */,
 				FEA7D99D234259B70007ADD8 /* Utilities */,
 				FEA7D9962341D6460007ADD8 /* Supporting Files */,
 				FEA7D9912341CA010007ADD8 /* Model */,
@@ -151,6 +154,14 @@
 				FEA7D99E234259DE0007ADD8 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FEA7D9A42343B06E0007ADD8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEA7D9A52343B0980007ADD8 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				FEA7D99A2341D66A0007ADD8 /* SWRevealViewController.m in Sources */,
 				FEA7D9A323432A6C0007ADD8 /* CreateAccountVC.swift in Sources */,
 				FEA7D99F234259DE0007ADD8 /* Constants.swift in Sources */,
+				FEA7D9A62343B0980007ADD8 /* AuthService.swift in Sources */,
 				FE420C5723419AAF000C693C /* SceneDelegate.swift in Sources */,
 				FEA7D9952341CA3B0007ADD8 /* ChannelVC.swift in Sources */,
 			);

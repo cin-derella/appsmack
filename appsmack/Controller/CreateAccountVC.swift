@@ -17,8 +17,6 @@ class CreateAccountVC: UIViewController {
     }
     
     
-  
-      
     
     @IBAction func closePreessed(_ sender: Any) {
       performSegue(withIdentifier: UNWIND, sender: nil)
