@@ -17,10 +17,10 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 
 //Segues
-
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToChannel"
+let TO_AVATAR_PICKER = "toAvatarPicker"
 
 // User Defaults
 
