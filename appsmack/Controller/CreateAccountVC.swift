@@ -21,8 +21,15 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-  
+        self.modalPresentationStyle = .fullScreen
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
     }
     
     @IBAction func createAccntPressed(_ sender: Any) {
