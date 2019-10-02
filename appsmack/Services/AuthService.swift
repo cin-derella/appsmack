@@ -42,11 +42,17 @@ class AuthService {
         }
     }
     
+    struct Login: Encodable {
+        let email: String
+        let password: String
+    }
+    
     func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
         let lowerCaseEmail = email.lowercased()
         let header = [
-            "Content-Type": "applications/json; charset=utf-8"
+            "Content-Type": "application/json"
         ]
+        
         let body: [String: Any] = [
             "email": lowerCaseEmail,
             "password": password
@@ -58,13 +64,24 @@ class AuthService {
         }
         
         Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (resp) in
-            if resp.result.error == nil {
+            //ßdebugPrint(resp)
+            let sCode:Int = resp.response!.statusCode
+            if sCode == 200 {
                 completion(true)
+                debugPrint(resp.result as Any)
             }
             else {
                 completion(false)
-                debugPrint(resp.result.error as Any)
+                debugPrint(resp.result as Any)
             }
+            //debugPrint(resp.response?.allHeaderFields)
+            //ßdebugPrint(resp.response?.statusCode)
+            //ßdebugPrint(resp.response?.allHeaderFields.values)
+            let contentKey = AnyHashable("Content-Type")
+            let contentType = resp.response!.allHeaderFields[contentKey] as! String
+            
+            debugPrint("statusCode is: \(sCode)")
+            debugPrint("contentType is: \(contentType)")
         }
     }
     
