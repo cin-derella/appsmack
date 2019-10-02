@@ -113,14 +113,25 @@ class AuthService {
                 debugPrint(response.result.value)
                 //var result: Result<String> = response.result
                 
-                if let json = self.stringToJSON(from: response.result.value!) {
-                    if let email = json["user"] as? String {
-                        self.userEmail = email
-                    }
-                    if let token = json["token"] as? String {
-                        self.authToken = token
-                    }
+//                if let json = self.stringToJSON(from: response.result.value!) {
+//                    if let email = json["user"] as? String {
+//                        self.userEmail = email
+//                    }
+//                    if let token = json["token"] as? String {
+//                        self.authToken = token
+//                    }
+//                    self.isLoggedIn = true
+//                }
+                debugPrint(response.data)
+                guard let data = response.data else { return }
+                do {
+                    let json = try JSON(data: data)
+                    self.userEmail = json["user"].stringValue
+                    self.authToken = json["token"].stringValue
                     self.isLoggedIn = true
+                }
+                catch {
+                    debugPrint(error)
                 }
                 
                 completion(true)
