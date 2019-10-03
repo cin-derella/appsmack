@@ -70,7 +70,7 @@
                                     <action selector="loginBtnPressed:" destination="Noh-8D-tTc" eventType="touchUpInside" id="GrB-8X-QIP"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-8F-x5d">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-8F-x5d" customClass="CircleImage" customModule="appsmack" customModuleProvider="target">
                                 <rect key="frame" x="26" y="641" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="htD-Ao-Kag"/>
@@ -304,14 +304,14 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Sjn-Sd-JsC">
-                                <rect key="frame" x="82" y="161" width="250" height="139"/>
+                                <rect key="frame" x="82" y="161" width="250" height="148"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLS-5g-2cu">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="ec7-Ct-qea"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -328,7 +328,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="mpq-Aw-l9g"/>
                                         </constraints>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -341,15 +341,16 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upQ-lW-zye">
-                                        <rect key="frame" x="0.0" y="108" width="250" height="15"/>
+                                        <rect key="frame" x="0.0" y="108" width="250" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="ju6-Bq-Tbi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQy-1t-cly">
-                                        <rect key="frame" x="0.0" y="137" width="250" height="2"/>
+                                        <rect key="frame" x="0.0" y="146" width="250" height="2"/>
                                         <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="Zp4-3q-Yil"/>
@@ -359,7 +360,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2e-wT-gi2">
-                                <rect key="frame" x="157" y="315" width="100" height="150"/>
+                                <rect key="frame" x="157" y="324" width="100" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="hGF-Ew-lUH"/>
                                 </constraints>
@@ -371,43 +372,49 @@
                                     <action selector="pickAvatarPressed:" destination="iSa-Z8-Pus" eventType="touchUpInside" id="Cwc-CI-tE0"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Qb2-1m-tPt">
-                                <rect key="frame" x="157" y="340" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Qb2-1m-tPt" customClass="CircleImage" customModule="appsmack" customModuleProvider="target">
+                                <rect key="frame" x="157" y="349" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="MUP-lK-bxx"/>
                                     <constraint firstAttribute="height" constant="100" id="szX-YE-X35"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-4x-EqS">
-                                <rect key="frame" x="106.66666666666669" y="470" width="201" height="29"/>
+                                <rect key="frame" x="106.66666666666669" y="484" width="201" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="2Eb-sq-S8a"/>
                                     <constraint firstAttribute="height" constant="29" id="7Ul-Z9-IN8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
-                                <state key="normal" title="Gnenerate backgound color">
+                                <state key="normal" title="Generate backgound color">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="pickBGColorPressed:" destination="iSa-Z8-Pus" eventType="touchUpInside" id="g92-Ut-ZR3"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YUv-gt-rju">
+                                <rect key="frame" x="188.66666666666666" y="249.66666666666663" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Sjn-Sd-JsC" firstAttribute="top" secondItem="BHp-oA-gNN" secondAttribute="bottom" constant="60" id="1iu-Cv-MTc"/>
                             <constraint firstItem="Q2e-wT-gi2" firstAttribute="width" secondItem="Qb2-1m-tPt" secondAttribute="width" id="7Vl-vW-jY5"/>
-                            <constraint firstItem="BdT-4x-EqS" firstAttribute="top" secondItem="Q2e-wT-gi2" secondAttribute="bottom" constant="5" id="8H9-0h-Lra"/>
+                            <constraint firstItem="BdT-4x-EqS" firstAttribute="top" secondItem="Q2e-wT-gi2" secondAttribute="bottom" constant="10" id="8H9-0h-Lra"/>
                             <constraint firstItem="Qb2-1m-tPt" firstAttribute="centerX" secondItem="qNL-bL-rHL" secondAttribute="centerX" id="A97-ZC-tqj"/>
                             <constraint firstItem="Qb2-1m-tPt" firstAttribute="top" secondItem="Sjn-Sd-JsC" secondAttribute="bottom" constant="40" id="AOb-Tc-1ew"/>
                             <constraint firstItem="Sjn-Sd-JsC" firstAttribute="centerX" secondItem="qNL-bL-rHL" secondAttribute="centerX" id="Bkq-EB-HI0"/>
                             <constraint firstItem="BdT-4x-EqS" firstAttribute="centerX" secondItem="qNL-bL-rHL" secondAttribute="centerX" id="Hfi-DD-9dT"/>
                             <constraint firstItem="mV4-1d-lRS" firstAttribute="centerX" secondItem="qNL-bL-rHL" secondAttribute="centerX" id="IEw-UE-Shr"/>
+                            <constraint firstItem="YUv-gt-rju" firstAttribute="centerX" secondItem="qNL-bL-rHL" secondAttribute="centerX" id="MGu-nL-NiY"/>
                             <constraint firstItem="BHp-oA-gNN" firstAttribute="centerX" secondItem="qNL-bL-rHL" secondAttribute="centerX" id="Pw9-FX-99s"/>
                             <constraint firstItem="KU9-Ua-eda" firstAttribute="bottom" secondItem="mV4-1d-lRS" secondAttribute="bottom" constant="30" id="Qys-vy-jPb"/>
                             <constraint firstItem="KU9-Ua-eda" firstAttribute="trailing" secondItem="bsX-FJ-7VM" secondAttribute="trailing" constant="20" id="SIw-Zx-xxA"/>
                             <constraint firstItem="Q2e-wT-gi2" firstAttribute="centerY" secondItem="Qb2-1m-tPt" secondAttribute="centerY" id="UCu-Ha-eH1"/>
                             <constraint firstItem="Q2e-wT-gi2" firstAttribute="centerX" secondItem="qNL-bL-rHL" secondAttribute="centerX" id="YFH-M2-xHb"/>
+                            <constraint firstItem="YUv-gt-rju" firstAttribute="centerY" secondItem="qNL-bL-rHL" secondAttribute="centerY" constant="-100" id="gHU-q9-Vsb"/>
                             <constraint firstItem="BHp-oA-gNN" firstAttribute="top" secondItem="KU9-Ua-eda" secondAttribute="top" constant="75" id="hcD-Qs-Dw8"/>
                             <constraint firstItem="bsX-FJ-7VM" firstAttribute="top" secondItem="KU9-Ua-eda" secondAttribute="top" constant="20" id="i0k-GH-wbc"/>
                         </constraints>
@@ -417,6 +424,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="Sy1-pb-yZU" id="Laf-Wx-Ihs"/>
                         <outlet property="passTxt" destination="upQ-lW-zye" id="5nh-Kh-npT"/>
+                        <outlet property="spinner" destination="YUv-gt-rju" id="fLB-vq-0Aj"/>
                         <outlet property="userImg" destination="Qb2-1m-tPt" id="Raj-Jr-Ng7"/>
                         <outlet property="usernameTxt" destination="GLS-5g-2cu" id="QLY-yt-xfE"/>
                         <segue destination="Rad-oM-qSz" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="BFZ-GW-84g"/>
