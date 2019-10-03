@@ -32,7 +32,6 @@ class  MessageService {
                             print(self.channels[0].channelTitle)
                         }
                     }
-      
                     completion(true)
                 } catch {
                     debugPrint(error)
