@@ -15,6 +15,8 @@ let BASE_URL = "http://localhost:3005/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
+
 
 //Colors
 let cinPurplePlaceholder = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 0.5)
@@ -38,3 +40,9 @@ let USER_EMAIL = "userEmail"
 let HEADER = [
     "Content-Type": "application/json"
 ]
+
+let BEARER_HEADER = [
+      "Authorization": "Bearer \(AuthService.instance.authToken)",
+      "Content-Type": "application/json; chatset=utf-8"
+  ]
+  

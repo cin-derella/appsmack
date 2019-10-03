@@ -183,6 +183,9 @@
                                         <real key="value" value="9"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="ToA-El-Drb" eventType="touchUpInside" id="cVf-88-EuB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJv-7X-G3f">
                                 <rect key="frame" x="106.66666666666669" y="359" width="201" height="29"/>
@@ -237,13 +240,19 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ep0-QS-raO">
+                                <rect key="frame" x="188.66666666666666" y="229.66666666666666" width="37" height="36.999999999999972"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dzP-R8-ceY" firstAttribute="top" secondItem="hov-AR-pTX" secondAttribute="top" constant="70" id="GjH-FT-qyn"/>
                             <constraint firstItem="W4f-0L-22a" firstAttribute="top" secondItem="dzP-R8-ceY" secondAttribute="bottom" constant="60" id="LmS-ab-grj"/>
                             <constraint firstItem="W4f-0L-22a" firstAttribute="centerX" secondItem="2on-Av-IIZ" secondAttribute="centerX" id="W5O-XW-MTi"/>
+                            <constraint firstItem="ep0-QS-raO" firstAttribute="centerX" secondItem="2on-Av-IIZ" secondAttribute="centerX" id="WRm-Kl-XIi"/>
                             <constraint firstItem="YXc-Wq-anX" firstAttribute="top" secondItem="W4f-0L-22a" secondAttribute="bottom" constant="40" id="Xav-o7-8at"/>
+                            <constraint firstItem="ep0-QS-raO" firstAttribute="centerY" secondItem="2on-Av-IIZ" secondAttribute="centerY" constant="-120" id="ZIS-UD-MrO"/>
                             <constraint firstItem="HJv-7X-G3f" firstAttribute="centerX" secondItem="2on-Av-IIZ" secondAttribute="centerX" id="bTJ-1g-9Em"/>
                             <constraint firstItem="HJv-7X-G3f" firstAttribute="top" secondItem="YXc-Wq-anX" secondAttribute="bottom" constant="5" id="iPP-5F-uAo"/>
                             <constraint firstItem="dzP-R8-ceY" firstAttribute="centerX" secondItem="2on-Av-IIZ" secondAttribute="centerX" id="kJm-LS-uH7"/>
@@ -255,6 +264,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="ndr-bU-Nlm"/>
                     <connections>
+                        <outlet property="passwordTxt" destination="11N-gT-WE9" id="DBh-SM-fFG"/>
+                        <outlet property="spinner" destination="ep0-QS-raO" id="I45-11-YIc"/>
+                        <outlet property="usernameTxt" destination="PRU-Ej-rEt" id="Bk6-Na-J4N"/>
                         <segue destination="iSa-Z8-Pus" kind="show" identifier="toCreateAccount" id="bQV-He-dyM"/>
                     </connections>
                 </viewController>
