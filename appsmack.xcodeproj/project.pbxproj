@@ -28,6 +28,8 @@
 		FEA7D9B023459FA40007ADD8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9AF23459FA40007ADD8 /* CircleImage.swift */; };
 		FEA7D9B32345CA280007ADD8 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9B12345CA280007ADD8 /* ProfileVC.swift */; };
 		FEA7D9B42345CA280007ADD8 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA7D9B22345CA280007ADD8 /* ProfileVC.xib */; };
+		FEA7D9B7234609610007ADD8 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9B6234609610007ADD8 /* MessageService.swift */; };
+		FEA7D9B9234609AE0007ADD8 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9B8234609AE0007ADD8 /* Channel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		FEA7D9AF23459FA40007ADD8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		FEA7D9B12345CA280007ADD8 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		FEA7D9B22345CA280007ADD8 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		FEA7D9B6234609610007ADD8 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		FEA7D9B8234609AE0007ADD8 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 		FEA7D9912341CA010007ADD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEA7D9B8234609AE0007ADD8 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			children = (
 				FEA7D9A52343B0980007ADD8 /* AuthService.swift */,
 				FEA7D9A9234499170007ADD8 /* UserDataService.swift */,
+				FEA7D9B6234609610007ADD8 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 				FEA7D9A1234261C70007ADD8 /* LoginVC.swift in Sources */,
 				FEA7D9B32345CA280007ADD8 /* ProfileVC.swift in Sources */,
 				FEA7D99C23423DEB0007ADD8 /* GradientView.swift in Sources */,
+				FEA7D9B7234609610007ADD8 /* MessageService.swift in Sources */,
+				FEA7D9B9234609AE0007ADD8 /* Channel.swift in Sources */,
 				FEA7D99A2341D66A0007ADD8 /* SWRevealViewController.m in Sources */,
 				FEA7D9A323432A6C0007ADD8 /* CreateAccountVC.swift in Sources */,
 				FEA7D9AA234499170007ADD8 /* UserDataService.swift in Sources */,
