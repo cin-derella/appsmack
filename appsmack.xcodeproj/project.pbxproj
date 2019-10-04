@@ -34,6 +34,7 @@
 		FEA7D9BE2346324A0007ADD8 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9BC2346324A0007ADD8 /* AddChannelVC.swift */; };
 		FEA7D9BF2346324A0007ADD8 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA7D9BD2346324A0007ADD8 /* AddChannelVC.xib */; };
 		FEA7D9C12346484E0007ADD8 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C02346484E0007ADD8 /* SocketService.swift */; };
+		FEA7D9C323478B3A0007ADD8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C223478B3A0007ADD8 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		FEA7D9BC2346324A0007ADD8 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		FEA7D9BD2346324A0007ADD8 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		FEA7D9C02346484E0007ADD8 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		FEA7D9C223478B3A0007ADD8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA7D9B8234609AE0007ADD8 /* Channel.swift */,
+				FEA7D9C223478B3A0007ADD8 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				FEA7D9C12346484E0007ADD8 /* SocketService.swift in Sources */,
 				FEA7D99F234259DE0007ADD8 /* Constants.swift in Sources */,
 				FEA7D9A62343B0980007ADD8 /* AuthService.swift in Sources */,
+				FEA7D9C323478B3A0007ADD8 /* Message.swift in Sources */,
 				FEA7D9BE2346324A0007ADD8 /* AddChannelVC.swift in Sources */,
 				FE420C5723419AAF000C693C /* SceneDelegate.swift in Sources */,
 				FEA7D9952341CA3B0007ADD8 /* ChannelVC.swift in Sources */,

@@ -17,7 +17,7 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 let URL_GET_CHANNEL = "\(BASE_URL)channel"
-
+let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel/"
 
 //Colors
 let cinPurplePlaceholder = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 0.5)

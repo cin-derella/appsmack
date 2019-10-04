@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChannelVC: UIViewController, UITableViewDelegate,UITableViewDataSource{
+class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
 
     @IBOutlet weak var userImg: CircleImage!
