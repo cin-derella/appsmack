@@ -14,9 +14,11 @@ import SwiftyJSON
 class  MessageService {
     static let instance = MessageService()
     
-    var  channels = [Channel](arrayLiteral:Channel(channelTitle: "title", channelDescription: "desc", id: "id"))
+    var channels = [Channel]() //[Channel](arrayLiteral:Channel(channelTitle: "title", channelDescription: "desc", id: "id"))
+    var selectedChannel: Channel?
     
     func findAllChannel(completion: @escaping CompletionHandler) {
+        //MessageService.instance.clearChannels()
         Alamofire.request(URL_GET_CHANNEL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             if response.result.error == nil{
                 guard let data  = response.data else{ return }
@@ -28,21 +30,28 @@ class  MessageService {
                             let id  = item["_id"].stringValue
                             let channel = Channel(channelTitle: name, channelDescription: channelDescription, id: id)
                             self.channels.append(channel)
+                            print("channel append: \(self.channels.count) \(channel.channelTitle)")
                         }
-                        print(self.channels[0].channelTitle)
+                        //print(self.channels[0].channelTitle)
+                        print("channel count: \(self.channels.count)")
+                        NotificationCenter.default.post(name: NOTIF_CHANNELS_LOADED, object: nil)
                         completion(true)
                     }
                 } catch {
-                    debugPrint(error)
+                    //debugPrint(error)
                 }
             }else{
                 completion(false)
-                debugPrint(response.result.error as Any)
+                //debugPrint(response.result.error as Any)
                 
             }
             
         }
         
+    }
+    
+    func clearChannels() {
+        channels.removeAll()
     }
     
 }

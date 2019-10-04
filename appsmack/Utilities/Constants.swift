@@ -24,7 +24,8 @@ let cinPurplePlaceholder = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, a
 
 //Notification Constants
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
-let NOTIF_CHANNEL_DATA_DID_CHANGE = Notification.Name("notifChannelDataChanged")
+let NOTIF_CHANNELS_LOADED = Notification.Name("notifChannelDataChanged")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("channelSelected")
 
 //Segues
 let TO_LOGIN = "toLogin"

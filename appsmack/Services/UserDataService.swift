@@ -28,7 +28,7 @@ class UserDataService {
     }
     
     
-    func returnUIColor(compoents:String)->UIColor{
+    func returnUIColor(compoents:String) -> UIColor{
    //     [0.8,0.8666666666666667,0.7098039215686275,1]
         
         let scanner = Scanner(string: compoents)
@@ -46,10 +46,10 @@ class UserDataService {
         scanner.scanUpToCharacters(from: comma,into:&a)
         
         let defaultColor = UIColor.lightGray
-        guard let rUnwrapped = r else{return defaultColor}
-        guard let gUnwrapped = g else{return defaultColor}
-        guard let bUnwrapped = b else{return defaultColor}
-        guard let aUnwrapped = a else{return defaultColor}
+        guard let rUnwrapped = r else{ return defaultColor }
+        guard let gUnwrapped = g else{ return defaultColor }
+        guard let bUnwrapped = b else{ return defaultColor }
+        guard let aUnwrapped = a else{ return defaultColor }
         
         let rfloat  = CGFloat(rUnwrapped.doubleValue)
         let gfloat  = CGFloat(gUnwrapped.doubleValue)
@@ -70,6 +70,7 @@ class UserDataService {
         AuthService.instance.isLoggedIn = false
         AuthService.instance.userEmail = ""
         AuthService.instance.authToken = ""
+        MessageService.instance.clearChannels()
     }
     
     
