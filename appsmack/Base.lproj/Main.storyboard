@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -583,18 +584,40 @@
                                     <constraint firstItem="9t6-Ad-mKG" firstAttribute="centerX" secondItem="asS-8i-8Ns" secondAttribute="centerX" id="lXB-mf-xWN"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQZ-nP-mhB">
+                                <rect key="frame" x="0.0" y="696" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bv7-Bv-XF8"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIt-z9-ws1">
+                                <rect key="frame" x="376" y="701" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMsgPressed:" destination="tF8-J9-dyS" eventType="touchUpInside" id="gSL-sL-pL4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="asS-8i-8Ns" secondAttribute="trailing" id="2ke-F1-SMS"/>
+                            <constraint firstItem="yQZ-nP-mhB" firstAttribute="leading" secondItem="2FV-Vv-7g6" secondAttribute="leading" id="BX6-48-fSW"/>
+                            <constraint firstItem="2FV-Vv-7g6" firstAttribute="trailing" secondItem="oIt-z9-ws1" secondAttribute="trailing" constant="8" id="Dwm-kB-UfX"/>
+                            <constraint firstItem="oIt-z9-ws1" firstAttribute="centerY" secondItem="yQZ-nP-mhB" secondAttribute="centerY" id="FyJ-UR-Sq6"/>
                             <constraint firstItem="asS-8i-8Ns" firstAttribute="leading" secondItem="2FV-Vv-7g6" secondAttribute="leading" id="awe-P6-7Iy"/>
+                            <constraint firstItem="yQZ-nP-mhB" firstAttribute="bottom" secondItem="2FV-Vv-7g6" secondAttribute="bottom" id="c0F-Ue-TdO"/>
                             <constraint firstItem="asS-8i-8Ns" firstAttribute="top" secondItem="2FV-Vv-7g6" secondAttribute="top" id="cic-Rz-Dgk"/>
+                            <constraint firstItem="2FV-Vv-7g6" firstAttribute="trailing" secondItem="yQZ-nP-mhB" secondAttribute="trailing" id="hoF-rp-0ho"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2FV-Vv-7g6"/>
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="9t6-Ad-mKG" id="8uH-gy-02B"/>
                         <outlet property="menuBtn" destination="2rr-Hx-KoB" id="yl2-qD-hBm"/>
+                        <outlet property="messageTxtBox" destination="yQZ-nP-mhB" id="u6e-g2-3BA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lui-2r-JqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -607,6 +630,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>

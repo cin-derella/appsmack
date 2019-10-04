@@ -35,6 +35,7 @@
 		FEA7D9BF2346324A0007ADD8 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA7D9BD2346324A0007ADD8 /* AddChannelVC.xib */; };
 		FEA7D9C12346484E0007ADD8 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C02346484E0007ADD8 /* SocketService.swift */; };
 		FEA7D9C323478B3A0007ADD8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C223478B3A0007ADD8 /* Message.swift */; };
+		FEA7D9C523479D700007ADD8 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C423479D700007ADD8 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		FEA7D9BD2346324A0007ADD8 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		FEA7D9C02346484E0007ADD8 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		FEA7D9C223478B3A0007ADD8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FEA7D9C423479D700007ADD8 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				FEA7D9AD2344D0A20007ADD8 /* AvatarCell.swift */,
 				FEA7D9AF23459FA40007ADD8 /* CircleImage.swift */,
 				FEA7D9BA23462A030007ADD8 /* ChannelCell.swift */,
+				FEA7D9C423479D700007ADD8 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			files = (
 				FEA7D9932341CA290007ADD8 /* ChatVC.swift in Sources */,
 				FE420C5523419AAF000C693C /* AppDelegate.swift in Sources */,
+				FEA7D9C523479D700007ADD8 /* KeyboardBoundView.swift in Sources */,
 				FEA7D9AE2344D0A20007ADD8 /* AvatarCell.swift in Sources */,
 				FEA7D9A1234261C70007ADD8 /* LoginVC.swift in Sources */,
 				FEA7D9B32345CA280007ADD8 /* ProfileVC.swift in Sources */,
