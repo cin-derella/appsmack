@@ -36,6 +36,7 @@
 		FEA7D9C12346484E0007ADD8 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C02346484E0007ADD8 /* SocketService.swift */; };
 		FEA7D9C323478B3A0007ADD8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C223478B3A0007ADD8 /* Message.swift */; };
 		FEA7D9C523479D700007ADD8 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C423479D700007ADD8 /* KeyboardBoundView.swift */; };
+		FEA7D9C72347A57C0007ADD8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C62347A57C0007ADD8 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		FEA7D9C02346484E0007ADD8 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		FEA7D9C223478B3A0007ADD8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FEA7D9C423479D700007ADD8 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		FEA7D9C62347A57C0007ADD8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				FEA7D9AF23459FA40007ADD8 /* CircleImage.swift */,
 				FEA7D9BA23462A030007ADD8 /* ChannelCell.swift */,
 				FEA7D9C423479D700007ADD8 /* KeyboardBoundView.swift */,
+				FEA7D9C62347A57C0007ADD8 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				FEA7D9A8234473860007ADD8 /* RoundedButton.swift in Sources */,
 				FEA7D9C12346484E0007ADD8 /* SocketService.swift in Sources */,
 				FEA7D99F234259DE0007ADD8 /* Constants.swift in Sources */,
+				FEA7D9C72347A57C0007ADD8 /* MessageCell.swift in Sources */,
 				FEA7D9A62343B0980007ADD8 /* AuthService.swift in Sources */,
 				FEA7D9C323478B3A0007ADD8 /* Message.swift in Sources */,
 				FEA7D9BE2346324A0007ADD8 /* AddChannelVC.swift in Sources */,
