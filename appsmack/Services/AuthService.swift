@@ -27,7 +27,7 @@ class AuthService {
     
     var authToken: String {
         get {
-            return defaults.value(forKey: TOKEN_KEY) as! String
+            return defaults.value(forKey: TOKEN_KEY) as? String ?? ""
         }
         set {
             defaults.set(newValue, forKey: TOKEN_KEY)
@@ -36,7 +36,7 @@ class AuthService {
     
     var userEmail: String {
         get {
-            return defaults.value(forKey: USER_EMAIL) as! String
+            return defaults.value(forKey: USER_EMAIL) as? String ?? ""
         }
         set {
             defaults.set(newValue, forKey: USER_EMAIL)
@@ -110,7 +110,7 @@ class AuthService {
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseString { (response) in
             if response.response?.statusCode == 200 {
                 //debugPrint(response)
-                debugPrint(response.result.value)
+                //debugPrint(response.result.value)
                 //var result: Result<String> = response.result
                 
 //                if let json = self.stringToJSON(from: response.result.value!) {
@@ -122,7 +122,7 @@ class AuthService {
 //                    }
 //                    self.isLoggedIn = true
 //                }
-                debugPrint(response.data)
+                //debugPrint(response.data)
                 guard let data = response.data else { return }
                 do {
                     let json = try JSON(data: data)

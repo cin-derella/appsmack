@@ -35,15 +35,31 @@ class LoginVC: UIViewController {
         
         AuthService.instance.loginUser(email: email, password: pass) { (success) in
             if success{
-                AuthService.instance.findUserByEmail(completion:{(success) in
+                AuthService.instance.findUserByEmail { (success) in
                     if success{
                         NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                         self.spinner.isHidden = true
                         self.spinner.stopAnimating()
+                        print("login succeeded and email exists:\(AuthService.instance.userEmail)")
+                        MessageService.instance.findAllChannel { (success) in
+                            print("all channel find:true")
+                            NotificationCenter.default.post(name: NOTIF_CHANNEL_DATA_DID_CHANGE, object: nil)
+                        }
                         self.dismiss(animated: true, completion: nil)
                     }
-                    
-                } )
+                    else {
+                        self.spinner.isHidden = true
+                        self.spinner.stopAnimating()
+                        print("email is bad:\(AuthService.instance.userEmail)")
+                        //self.dismiss(animated: true, completion: nil)
+                    }
+                }
+            }
+            else {
+                self.spinner.isHidden = true
+                self.spinner.stopAnimating()
+                print("login failed:\(AuthService.instance.userEmail)")
+                //self.dismiss(animated: true, completion: nil)
             }
         }
     }

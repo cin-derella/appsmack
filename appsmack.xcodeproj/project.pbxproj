@@ -33,6 +33,7 @@
 		FEA7D9BB23462A030007ADD8 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9BA23462A030007ADD8 /* ChannelCell.swift */; };
 		FEA7D9BE2346324A0007ADD8 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9BC2346324A0007ADD8 /* AddChannelVC.swift */; };
 		FEA7D9BF2346324A0007ADD8 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEA7D9BD2346324A0007ADD8 /* AddChannelVC.xib */; };
+		FEA7D9C12346484E0007ADD8 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7D9C02346484E0007ADD8 /* SocketService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		FEA7D9BA23462A030007ADD8 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		FEA7D9BC2346324A0007ADD8 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		FEA7D9BD2346324A0007ADD8 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		FEA7D9C02346484E0007ADD8 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				FEA7D9A52343B0980007ADD8 /* AuthService.swift */,
 				FEA7D9A9234499170007ADD8 /* UserDataService.swift */,
 				FEA7D9B6234609610007ADD8 /* MessageService.swift */,
+				FEA7D9C02346484E0007ADD8 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				FEA7D9AA234499170007ADD8 /* UserDataService.swift in Sources */,
 				FEA7D9B023459FA40007ADD8 /* CircleImage.swift in Sources */,
 				FEA7D9A8234473860007ADD8 /* RoundedButton.swift in Sources */,
+				FEA7D9C12346484E0007ADD8 /* SocketService.swift in Sources */,
 				FEA7D99F234259DE0007ADD8 /* Constants.swift in Sources */,
 				FEA7D9A62343B0980007ADD8 /* AuthService.swift in Sources */,
 				FEA7D9BE2346324A0007ADD8 /* AddChannelVC.swift in Sources */,
@@ -497,7 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34YM3S85L;
 				INFOPLIST_FILE = appsmack/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S34YM3S85L;
 				INFOPLIST_FILE = appsmack/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
