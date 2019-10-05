@@ -31,6 +31,11 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         SocketService.instance.getChannel { (success) in
             if success{
                 self.tableView.reloadData()
+                let numRows = self.tableView.numberOfRows(inSection: 0)
+                self.tableView.selectRow(at: IndexPath(row: numRows-1, section: 0), animated: false, scrollPosition: .bottom)
+                MessageService.instance.selectedChannel = MessageService.instance.channels[self.tableView.indexPathForSelectedRow?.row ?? 0]
+                NotificationCenter.default.post(name: NOTIF_CHANNEL_SELECTED, object: nil)
+                self.revealViewController()?.revealToggle(animated: true)
             }
         }
         
