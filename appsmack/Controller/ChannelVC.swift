@@ -28,15 +28,20 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.channelsLoaded(_:)), name: NOTIF_CHANNELS_LOADED, object: nil)
         
-        SocketService.instance.getChannel { (success) in
-            if success{
-                self.tableView.reloadData()
-                let numRows = self.tableView.numberOfRows(inSection: 0)
-                self.tableView.selectRow(at: IndexPath(row: numRows-1, section: 0), animated: false, scrollPosition: .bottom)
-                MessageService.instance.selectedChannel = MessageService.instance.channels[self.tableView.indexPathForSelectedRow?.row ?? 0]
-                NotificationCenter.default.post(name: NOTIF_CHANNEL_SELECTED, object: nil)
-                self.revealViewController()?.revealToggle(animated: true)
-            }
+        SocketService.instance.getChannel { (newChannel, creatorId) in
+            self.tableView.reloadData()
+//            if UserDataService.instance.id == creatorId {
+//                var index = 0
+//                for channel in MessageService.instance.channels {
+//                    if channel.id == newChannel.id {
+//                        break
+//                    }
+//                    index += 1
+//                }
+//                MessageService.instance.selectedChannel = MessageService.instance.channels[index]
+//                NotificationCenter.default.post(name: NOTIF_CHANNEL_SELECTED, object: nil)
+//                self.revealViewController()?.revealToggle(animated: true)
+//            }
         }
         
         SocketService.instance.getChatMessage { (newMessage) in

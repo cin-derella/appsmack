@@ -37,7 +37,7 @@ class SocketService: NSObject {
 
     }
     
-    func getChannel(completion:@escaping CompletionHandler){
+    func getChannel(completion:@escaping (_ channel: Channel, _ creatorId: String) -> Void){
         socket.on("channelCreated") { (dataArray,ack) in
             guard let channelName = dataArray[0] as? String else { return }
             guard let channelDesc = dataArray[1] as? String else { return }
@@ -45,7 +45,7 @@ class SocketService: NSObject {
 
             let newChannel = Channel(channelTitle: channelName, channelDescription: channelDesc, id: channelId)
             MessageService.instance.channels.append(newChannel)
-            completion(true)
+            completion(newChannel, UserDataService.instance.id)
         }
     }
     
@@ -58,7 +58,7 @@ class SocketService: NSObject {
     func getChatMessage(completion: @escaping (_ newMessage: Message) -> Void) {
         socket.on("messageCreated") { (dataArray, ack) in
             guard let messageBody = dataArray[0] as? String else { return }
-            guard let userId = dataArray[1] as? String else { return }
+            //guard let userId = dataArray[1] as? String else { return }
             guard let channelId = dataArray[2] as? String else { return }
             guard let userName = dataArray[3] as? String else { return }
             guard let userAvatar = dataArray[4] as? String else { return }
